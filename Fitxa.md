@@ -275,25 +275,32 @@ Administració → carpeta_administracio → L/E
 
 ### 6.1.
 
-Quin avantatge té aquesta solució respecte a donar permisos persona per persona?
+**Quin avantatge té aquesta solució respecte a donar permisos persona per persona?**
 
 ---
+L'avantatge principal és que els permisos es gestionen de manera centralitzada.
 
+En comptes de modificar els permisos de cada persona, podem modificar el conjunt de persones que té accés.
+
+Això redueix la feina administrativa, facilita les altes i baixes i disminueix el risc d'errors.
 ---
 
 ### 6.2.
 
-Si Dídac passa d'Administració a Producció musical, què caldria modificar?
+**Si Dídac passa d'Administració a Producció musical, què caldria modificar?**
 
 ---
+Si Dídac passa d'Administració a Producció musical, caldria treure'l del conjunt d'Administració i incorporar-lo al conjunt de Producció musical.
 
+Els permisos es modificarien com a conseqüència d'aquest canvi.
 ---
 
 ### 6.3.
 
-Com anomenaries aquests conjunts de persones?
+**Com anomenaries aquests conjunts de persones?**
 
 ---
+Aquests conjunts de persones s'anomenarien grups.
 
 ---
 
@@ -302,14 +309,18 @@ Com anomenaries aquests conjunts de persones?
 A partir de l'organització de l'empresa, proposa els primers conjunts de persones que crearies.
 
 **No cal trobar encara la solució definitiva.**
+| Nom proposat | Qui hi pertanyeria? | Per què existeix aquest conjunt?|
+| - | - | - |
+| `GG_Direccio`| Aina Ciurans, Rut Tornil | Agrupar els treballadors de Direcció.|
+| `GG_Administracio`| Dídac Gassó, Laia Macias| Gestionar els recursos generals d'Administració.|
+| `GG_Administracio_Responsable`| Laia Macias | Donar els permisos específics de responsable. |
+| `GG_SuportTecnic` | Estel Birosta, Aina Zuriguel, Lluïsa Richart | Gestionar els recursos generals de Suport tècnic.|
+| `GG_SuportTecnic_Responsable`| Lluïsa Richart | Donar els permisos específics de responsable. |
+| `GG_ProduccioMusical`| Roser, Guillem, Meritxell, Alícia, Carles, Eulàlia | Gestionar els recursos generals de Producció musical. |
+| `GG_ProduccioMusical_Responsable` | Meritxell Reglat| Donar els permisos específics de responsable. |
+| `GG_Informatica`| Talia Costas, Alex Soriano| Agrupar els usuaris del departament d'Informàtica. |
+| `GG_Externs`| Pere Espinalt, Neus Bages| Gestionar els accessos limitats dels usuaris externs. |
 
-|Nom proposat|Qui hi pertanyeria?|Per què existeix aquest conjunt?|
-|---|---|---|
-||||
-||||
-||||
-||||
-||||
 
 ---
 
