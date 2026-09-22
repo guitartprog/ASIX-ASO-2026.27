@@ -393,25 +393,25 @@ Completa les frases amb les teves paraules.
 
 ### Usuari
 
-Un usuari representa:
+Un usuari representa una persona que necessita identificar-se davant del sistema per poder utilitzar els recursos de MusicCloud.
 
 ---
 
 ### Recurs
 
-Un recurs és:
+Un recurs és un element del sistema al qual es pot donar o restringir l'accés, com una carpeta, un fitxer o un servei.
 
 ---
 
 ### Permís
 
-Un permís determina:
+Un permís determina què pot fer un usuari sobre un recurs, per exemple llegir-lo, modificar-lo o administrar-lo.
 
 ---
 
 ### Grup
 
-Un grup serveix per:
+Un grup serveix per agrupar usuaris amb necessitats d'accés similars i gestionar els permisos de manera conjunta.
 
 ---
 
@@ -419,21 +419,35 @@ Un grup serveix per:
 
 # 11. Regla de mínim privilegi
 
-Analitza aquesta afirmació:
+**Analitza aquesta afirmació:**
 
 > Un usuari només hauria de tenir els permisos estrictament necessaris per realitzar la seva feina.
 
 Explica amb les teves paraules què significa.
 
 ---
+La regla de mínim privilegi significa que cada usuari ha de disposar únicament dels permisos necessaris per poder realitzar correctament la seva feina.
+
+No s'han de donar permisos addicionals simplement perquè siguin còmodes.
 
 ---
 
-Posa un exemple relacionat amb MusicCloud.
+**Posa un exemple relacionat amb MusicCloud.**
 
 ---
 
----
+Un membre de Producció musical necessita accedir a les carpetes del seu departament, però no necessita accedir a la documentació interna d'Administració.
+
+Per tant:
+
+    Producció musical → accés necessari
+    Administració      → NA
+
+Un altre exemple encara més sensible seria la carpeta:
+
+    /empresa/administracio_sistema/backups
+
+No s'hauria de donar accés administratiu a qualsevol treballador d'Informàtica només pel fet de pertànyer al departament. El privilegi ha d'estar justificat per la seva funció.
 
 ---
 
@@ -445,22 +459,27 @@ Quina de les dues estratègies consideres més adequada?
 
 ☐ Assignar permisos individualment a cada usuari.
 
-☐ Organitzar els usuaris segons les seves necessitats i assignar permisos a aquests conjunts.
+**X** Organitzar els usuaris segons les seves necessitats i assignar permisos a aquests conjunts.
 
 Justifica la resposta.
 
 ---
 
----
+A mesura que MusicCloud creix, gestionar els permisos individualment es torna cada vegada més complex.
+
+En canvi, si organitzem els usuaris segons departament, responsabilitat i projectes, els permisos es poden gestionar de manera centralitzada.
+
+Per exemple:
+
+    GG_Administracio
+            ↓
+    recursos d'Administració
+            ↓
+            L/E
+
+Si una persona entra a Administració, s'incorpora al conjunt corresponent. Si marxa del departament, se'n retira.
+
+Això facilita la gestió i redueix el risc de mantenir permisos que ja no corresponen a les funcions de l'usuari.
 
 ---
 
-Jo **no faria obligatori que acabessin tota la fitxa abans d'explicar res**. La utilitzaria de manera sincronitzada amb la classe:
-
-**0–40 min:** apartats 1–3 → analitzen MusicCloud i els accessos.  
-**40–65 min:** apartats 4–5 → apareix el problema de gestionar permisos individualment.  
-**65–85 min:** explicació curta de **usuari, grup, recurs, permís i mínim privilegi**.  
-**85–110 min:** apartats 6–9 → apliquen immediatament el concepte de grup.  
-**110–120 min:** apartats 10–12 → revisió i tancament.
-
-Hi ha una decisió pedagògica important: a l'apartat 4 **no utilitzo la paraula “grup” fins que l'alumnat ha intentat resoldre el problema**. Això encaixa molt millor amb el cicle que vols seguir: primer tenen el problema, després apareix la necessitat i només aleshores introdueixes el concepte teòric.
