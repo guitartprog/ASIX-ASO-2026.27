@@ -346,9 +346,9 @@ Quina possible solució proposes?
 
 Fer que Laia pertanyi a:
 
-**GG_Administracio**
-        +
-**GG_Administracio_Responsable**
+    GG_Administracio
+            +
+    GG_Administracio_Responsable
 
 D'aquesta manera, heretaria els permisos normals d'Administració i, a més, els permisos específics de responsable.
 
@@ -365,13 +365,25 @@ Campanya Estiu
 Creus que hauríem de canviar-les de departament?
 
 ☐ Sí  
-☐ No
+ No
 
 Si no, com podríem donar-los accés als recursos del projecte?
 
 ---
 
----
+El projecte no modifica el departament al qual pertany una persona. La solució seria crear un conjunt específic per al projecte, per exemple:
+
+    GG_Projecte_CampanyaEstiu
+
+I afegir-hi temporalment les persones que participen en el projecte.
+
+D'aquesta manera, podem donar accés a:
+
+    /empresa/projectes/campanya_estiu
+
+només als participants, independentment del seu departament.
+
+Quan el projecte finalitzi, es pot retirar l'accés eliminant els participants del conjunt.
 
 ---
 
