@@ -331,11 +331,12 @@ Laia treballa al departament d'Administració, però també és la responsable d
 És suficient que pertanyi només al conjunt `Administració`?
 
 ☐ Sí  
-☐ No
+**X** No
 
 Per què?
 
 ---
+Laia és membre d'Administració, però també és responsable del departament. Per tant, necessita permisos diferents dels d'un usuari estàndard d'Administració.
 
 ---
 
@@ -343,7 +344,13 @@ Quina possible solució proposes?
 
 ---
 
----
+Fer que Laia pertanyi a:
+
+**GG_Administracio**
+        +
+**GG_Administracio_Responsable**
+
+D'aquesta manera, heretaria els permisos normals d'Administració i, a més, els permisos específics de responsable.
 
 ---
 
