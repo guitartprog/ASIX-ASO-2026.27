@@ -24,16 +24,27 @@ Consulta la informació disponible sobre els departaments, treballadors i perfil
 
 Completa la taula següent.
 
-|Persona|Departament|Funció / responsabilitat|Necessita privilegis especials? Per què?|
-|---|---|---|---|
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
+
+| Persona          | Departament       | Funció / responsabilitat                         | Necessita privilegis especials? Per què?                                                                                                                                                  |
+| ---------------- | ----------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aina Ciurans     | Direcció          | Treballadora de Direcció                         | No necessàriament. Necessita accés als recursos propis de Direcció, però no privilegis d'administració del sistema.                                                                       |
+| Rut Tornil       | Direcció          | Treballadora de Direcció                         | No necessàriament. Necessita accés als recursos propis de Direcció, però no privilegis d'administració del sistema.                                                                       |
+| Dídac Gassó      | Administració     | Usuari estàndard d'Administració                 | No. Ha de tenir els permisos corresponents al seu departament.                                                                                                                            |
+| Laia Macias      | Administració     | Responsable del departament d'Administració      | Sí. Necessita accés específic a gestio_departament i permisos superiors als usuaris estàndard del departament.                                                                      |
+| Estel Birosta    | Suport tècnic     | Usuari estàndard de Suport tècnic                | No. Té els permisos del seu departament.                                                                                                                                                  |
+| Aina Zuriguel    | Suport tècnic     | Usuària estàndard de Suport tècnic               | No. Té els permisos del seu departament.                                                                                                                                                  |
+| Lluïsa Richart   | Suport tècnic     | Responsable del departament de Suport tècnic     | Sí Necessita accés específic a gestio_departament i capacitat de gestionar els recursos del seu departament.                                                                       |
+| Roser Alberch    | Producció musical | Usuària estàndard de Producció musical           | No. Té els permisos corresponents al seu departament.                                                                                                                                     |
+| Guillem Adella   | Producció musical | Usuari estàndard de Producció musical            | No. Té els permisos corresponents al seu departament.                                                                                                                                     |
+| Meritxell Reglat | Producció musical | Responsable del departament de Producció musical | Sí. Necessita accés específic a gestio_departament i permisos superiors als usuaris estàndard.                                                                                      |
+| Alícia Monclús   | Producció musical | Usuària estàndard de Producció musical           | No. Té els permisos corresponents al seu departament.                                                                                                                                     |
+| Carles Molins    | Producció musical | Usuari estàndard de Producció musical            | No. Té els permisos corresponents al seu departament.                                                                                                                                     |
+| Eulàlia Galcera  | Producció musical | Usuària estàndard de Producció musical           | No. Té els permisos corresponents al seu departament.                                                                                                                                     |
+| Talia Costas     | Informàtica       | Usuària d'Informàtica                            | Sí. Té privilegis d'administració per gestionar usuaris, grups, permisos, serveis, servidors, logs, backups i altres tasques d'administració. |
+| Alex Soriano     | Informàtica       | Usuari d'Informàtica                             | Sí. Té privilegis d'administració per gestionar usuaris, grups, permisos, serveis, servidors, logs, backups i altres tasques d'administració.  |
+| Pere Espinalt    | Extern            | Usuari extern                                    | No.** Ha de tenir únicament els accessos temporals o específics que necessiti.                                                                                                          |
+| Neus Bages       | Extern            | Usuària externa                                  | **No.** Ha de tenir únicament els accessos temporals o específics que necessiti.                                                                                                          |
+
 
 ### 1.1. Reflexió
 
