@@ -42,8 +42,8 @@ Completa la taula següent.
 | Eulàlia Galcera  | Producció musical | Usuària estàndard de Producció musical           | No. Té els permisos corresponents al seu departament.                                                                                                                                     |
 | Talia Costas     | Informàtica       | Usuària d'Informàtica                            | Sí. Té privilegis d'administració per gestionar usuaris, grups, permisos, serveis, servidors, logs, backups i altres tasques d'administració. |
 | Alex Soriano     | Informàtica       | Usuari d'Informàtica                             | Sí. Té privilegis d'administració per gestionar usuaris, grups, permisos, serveis, servidors, logs, backups i altres tasques d'administració.  |
-| Pere Espinalt    | Extern            | Usuari extern                                    | No.** Ha de tenir únicament els accessos temporals o específics que necessiti.                                                                                                          |
-| Neus Bages       | Extern            | Usuària externa                                  | **No.** Ha de tenir únicament els accessos temporals o específics que necessiti.                                                                                                          |
+| Pere Espinalt    | Extern            | Usuari extern                                    | No. Ha de tenir únicament els accessos temporals o específics que necessiti.                                                                                                          |
+| Neus Bages       | Extern            | Usuària externa                                  | No. Ha de tenir únicament els accessos temporals o específics que necessiti.                                                                                                          |
 
 
 ### 1.1. Reflexió
@@ -52,20 +52,24 @@ Quines diferències observes entre un **treballador**, un **departament** i una 
 
 ---
 
----
+Molt simple, un treballador és una persona concreta que treballa a MusicCloud. 
+
+En canvi un departament és una agrupació organitzativa de treballadors que realitzen funcions relacionades, com Administració, Informàtica o Producció musical. 
+
+Per altre banda, una funció o responsabilitat determina què fa una persona dins del seu departament. Per exemple, Laia Macias pertany a Administració, però a més té la responsabilitat de ser la cap del departament.
 
 ---
 
 Hi ha persones que, pel seu càrrec o funció, necessiten accessos diferents dels altres membres del seu departament?
 
-☐ Sí  
+**X** Sí  
 ☐ No
 
 Posa'n algun exemple:
 
 ---
 
----
+**Per exemple**, Laia Macias pertany a Administració igual que Dídac Gassó, però és la responsable del departament. Per aquest motiu té accés a gestio_departament, mentre que Dídac no hi hauria de tenir accés.
 
 ---
 
