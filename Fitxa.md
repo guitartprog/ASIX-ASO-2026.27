@@ -79,16 +79,16 @@ Analitza l'estructura d'informació de MusicCloud.
 
 Classifica alguns dels recursos següents segons la seva finalitat.
 
-|Recurs|Qui creus que l'hauria d'utilitzar?|Per a què?|
-|---|---|---|
-|`/empresa/comu/intercanvi`|||
-|`/empresa/comu/comunicats`|||
-|`/empresa/departaments/administracio/compartida`|||
-|`/empresa/departaments/administracio/gestio_departament`|||
-|`/empresa/projectes/campanya_estiu`|||
-|`/empresa/administracio_sistema/backups`|||
 
----
+
+| Recurs | Qui creus que l'hauria d'utilitzar? | Per a què? | |- | - | - |
+| `/empresa/comu/intercanvi` | Tots els treballadors i externs quan sigui necessari | Intercanviar temporalment documents, especialment amb usuaris externs. |
+| `/empresa/comu/comunicats` | Treballadors de l'empresa  (Els externs NO) | Consultar comunicats i informació general de MusicCloud.|
+| `/empresa/departaments/administracio/compartida` | Usuaris d'Administració | Treballar amb els documents compartits del departament.|
+| `/empresa/departaments/administracio/gestio_departament` | Laia Macias, Cap de administració | Gestionar documentació i informació reservada a la responsable del departament.|
+| `/empresa/projectes/campanya_estiu` | Membres assignats al projecte | Treballar amb els fitxers específics de la campanya sense necessitat de canviar de departament. |
+| `/empresa/administracio_sistema/backups` | Personal amb funcions d'administració del sistema    | Gestionar les còpies de seguretat dels sistemes.                                                |
+
 
 # 3. Qui ha de poder fer què?
 
