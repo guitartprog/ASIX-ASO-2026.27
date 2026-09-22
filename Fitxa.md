@@ -81,13 +81,14 @@ Classifica alguns dels recursos següents segons la seva finalitat.
 
 
 
-| Recurs | Qui creus que l'hauria d'utilitzar? | Per a què? | |- | - | - |
+| Recurs | Qui creus que l'hauria d'utilitzar?| Per a què? |
+| - | - | - |
 | `/empresa/comu/intercanvi` | Tots els treballadors i externs quan sigui necessari | Intercanviar temporalment documents, especialment amb usuaris externs. |
-| `/empresa/comu/comunicats` | Treballadors de l'empresa  (Els externs NO) | Consultar comunicats i informació general de MusicCloud.|
-| `/empresa/departaments/administracio/compartida` | Usuaris d'Administració | Treballar amb els documents compartits del departament.|
-| `/empresa/departaments/administracio/gestio_departament` | Laia Macias, Cap de administració | Gestionar documentació i informació reservada a la responsable del departament.|
-| `/empresa/projectes/campanya_estiu` | Membres assignats al projecte | Treballar amb els fitxers específics de la campanya sense necessitat de canviar de departament. |
-| `/empresa/administracio_sistema/backups` | Personal amb funcions d'administració del sistema    | Gestionar les còpies de seguretat dels sistemes.                                                |
+| `/empresa/comu/comunicats` | Treballadors de l'empresa  (Els externs NO)| Consultar comunicats i informació general de MusicCloud.  |
+| `/empresa/departaments/administracio/compartida`  | Usuaris d'Administració   | Treballar amb els documents compartits del departament. |
+| `/empresa/departaments/administracio/gestio_departament` | Laia Macias, Cap de administració  | Gestionar documentació i informació reservada a la responsable del departament.  |
+| `/empresa/projectes/campanya_estiu`  | Membres assignats al projecte  | Treballar amb els fitxers específics de la campanya sense necessitat de canviar de departament. |
+| `/empresa/administracio_sistema/backups`   | Personal amb funcions d'administració del sistema    | Gestionar les còpies de seguretat dels sistemes.    |
 
 
 # 3. Qui ha de poder fer què?
@@ -107,14 +108,13 @@ Utilitza:
 
 No busquis encara una solució tècnica. Pensa només en les necessitats de l'empresa.
 
-|Situació|Accés proposat|Justificació|
-|---|---|---|
-|Dídac accedeix a la carpeta compartida d'Administració|||
-|Laia accedeix a la gestió del departament d'Administració|||
-|Pere, treballador extern, accedeix als comunicats interns|||
-|Talia accedeix als backups del sistema|||
-|Un membre de Producció musical accedeix a la carpeta d'Administració|||
-|Un participant de `campanya_estiu` accedeix als fitxers del projecte|||
+| Situació | Accés proposat | Justificació |
+| - | - | - |
+| Dídac accedeix a la carpeta compartida d'Administració | **L/E** | És membre d'Administració i necessita treballar amb els documents compartits del departament.                                                                          |
+| Laia accedeix a la gestió del departament d'Administració | **L/E** | És la responsable del departament i la documentació estableix R: L/E.|| Pere, treballador extern, accedeix als comunicats interns | **NA** | Els externs no tenen accés als comunicats interns segons la matriu d'accessos. |
+| Talia accedeix als backups del sistema | **ADM** | La matriu indica ADM per a Informàtica. Tot i això, tècnicament aquest privilegi s'hauria d'assignar només al personal que tingui realment funcions d'administració. |
+| Un membre de Producció musical accedeix a la carpeta d'Administració | **NA**  | No necessita accedir als recursos interns d'un altre departament. |
+| Un participant de campanya_estiu accedeix als fitxers del projecte | **SP** | L'accés està determinat per la participació en el projecte, no pel departament d'origen.  |
 
 ---
 
@@ -144,39 +144,49 @@ David → lectura/escriptura
 
 ### 4.1.
 
-Què passaria si l'empresa tingués **100 treballadors** amb el mateix tipus d'accés?
+**Què passaria si l'empresa tingués **100 treballadors** amb el mateix tipus d'accés?**
 
 ---
+Si hi hagués 100 treballadors amb el mateix tipus d'accés, assignar els permisos individualment seria molt poc eficient.
+
+L'administrador hauria de configurar i mantenir els permisos de 100 comptes. Això augmentaria la possibilitat d'errors i faria més difícil comprovar qui té accés a cada recurs.
 
 ---
 
 ### 4.2.
 
-Què passaria cada vegada que s'incorporés una persona nova?
+**Què passaria cada vegada que s'incorporés una persona nova?**
 
 ---
+Cada vegada que s'incorporés una persona nova, l'administrador hauria de revisar manualment tots els permisos que necessita.
+
+Això faria que l'alta d'usuaris fos més lenta i podria provocar que un usuari tingués permisos incorrectes o que se n'oblidés algun.
 
 ---
 
 ### 4.3.
 
-Què passaria quan una persona canviés de departament?
+**Què passaria quan una persona canviés de departament?**
 
 ---
+Quan una persona canviés de departament, caldria eliminar manualment els permisos antics i afegir els nous.
+
+A més, si s'oblidés algun permís anterior, l'usuari podria conservar accés a informació del seu antic departament.
 
 ---
 
 ### 4.4.
 
-Proposa una manera de gestionar aquestes persones conjuntament.
+**Proposa una manera de gestionar aquestes persones conjuntament.**
 
 No cal que coneguis encara el nom tècnic de la solució.
 
 ---
-
----
-
----
+Una manera més eficient seria crear un grup amb les persones que necessiten els mateixos permisos.
+Els permisos s'assignarien al grup en lloc de fer-ho persona per persona.
+També podríem organitzar els usuaris dins d'una unitat organitzativa segons el seu departament.
+Així, seria més fàcil gestionar les altes, baixes i canvis de departament.
+D'aquesta manera reduïm errors i facilitem l'administració del sistema.
 
 ---
 
