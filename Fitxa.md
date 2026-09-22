@@ -198,23 +198,40 @@ Ara es produeixen aquests tres canvis:
 
 Dídac deixa Administració i passa a Producció musical.
 
-Quins accessos hauria de perdre?
+---
+**Quins accessos hauria de perdre?**
 
 ---
+Hauria de perdre els accessos associats al departament d'Administració, inclòs l'accés a les seves carpetes compartides i documentació interna.
 
-Quins accessos hauria d'obtenir?
+També s'hauria de revisar qualsevol accés addicional que tingués per la seva antiga funció.
 
 ---
+**Quins accessos hauria d'obtenir?**
 
+---
+Els corresponents a un usuari estàndard de Producció musical, incloent-hi els recursos compartits del nou departament.
+
+No conservaria automàticament els permisos d'Administració.
 ---
 
 ### Cas B
 
 S'incorpora una nova treballadora al departament d'Administració.
 
-Quins accessos caldria configurar?
+---
+**Quins accessos caldria configurar?**
 
 ---
+Caldria:
+
+Crear el seu compte d'usuari.
+Assignar-la al departament d'Administració.
+Donar-li els accessos corresponents a un usuari estàndard del departament.
+Crear la seva carpeta personal.
+Comprovar que no tingui permisos sobre recursos que no necessita.
+
+No se li donarien automàticament els permisos de responsable del departament.
 
 ---
 
@@ -224,9 +241,14 @@ Quins accessos caldria configurar?
 
 Pere Espinalt deixa de col·laborar amb MusicCloud.
 
-Què hauríem de fer amb els seus accessos?
+---
+
+**Què hauríem de fer amb els seus accessos?**
 
 ---
+Caldria revocar els seus accessos als recursos de MusicCloud i impedir que el seu compte pugui continuar accedint als sistemes.
+
+També s'hauria de revisar qualsevol accés temporal que se li hagués concedit i conservar, si correspon segons les polítiques de l'empresa, el registre de les seves actuacions.
 
 ---
 
