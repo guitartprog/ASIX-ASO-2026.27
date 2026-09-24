@@ -128,7 +128,9 @@ Podria pertanyer a els grups:
 
 ---
 
----
+No és contradictori perquè la OU indica on està organitzat el compte dins del directori, mentre que els grups indiquen a quins recursos pot accedir.
+
+Dídac continua pertanyent a Administració, però també pot formar part del grup del projecte Campanya Estiu sense canviar de departament.
 
 ---
 
@@ -137,6 +139,7 @@ Podria pertanyer a els grups:
 Explica breument què entens per **servei de directori**.
 
 ---
+És un servei que permet emmagatzemar, organitzar i gestionar de manera centralitzada la informació dels usuaris, grups, equips i altres objectes d'una empresa.
 
 ---
 
