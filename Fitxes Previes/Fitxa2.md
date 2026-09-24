@@ -320,6 +320,7 @@ Perquè seria més difícil trobar i administrar els objectes, controlar-ne l'or
 ### b) Per què no hauríem d'utilitzar les OU per substituir els grups de permisos?
 
 ---
+Perquè les OU serveixen per organitzar els objectes i facilitar-ne l'administració, mentre que els grups serveixen per agrupar usuaris i gestionar els permisos d'accés als recursos.
 
 ---
 
@@ -327,7 +328,7 @@ Perquè seria més difícil trobar i administrar els objectes, controlar-ne l'or
 
 ---
 
----
+L'organització per unitats organitzatives segons els departaments i els tipus d'objectes, ja que permet afegir nous usuaris i equips mantenint una estructura ordenada.
 
 ---
 
@@ -339,16 +340,44 @@ A partir de les decisions preses durant la sessió, deixa definida la proposta q
 
 ```text
 MusicCloud
-│
-│
-│
-│
+└── dc=musiccloud,dc=local
+    ├── ou=Usuaris
+    │   ├── Direccio
+    │   ├── Administracio
+    │   ├── SuportTecnic
+    │   ├── ProduccioMusical
+    │   └── Informatica
+    │
+    ├── ou=Equips
+    │   ├── ou=Portatils
+    │   ├── ou=Sobretaula
+    │   ├── ou=Mobils
+    │   ├── ou=Servidors
+    │   ├── ou=DispositiusXarxa
+    │   │   ├── Routers
+    │   │   ├── Switches
+    │   │   └── Firewalls
+    │   ├── ou=Emmagatzematge
+    │   │   └── NAS
+    │   ├── ou=Alimentacio
+    │   │   └── SAI
+    │   └── ou=Impressores
+    │
+    └── ou=Serveis
+        ├── ComptesAplicacions
+        └── ComptesServeis
 ```
 
 ## Criteri utilitzat per organitzar els objectes
 
 ---
+Els objectes s'organitzen segons la seva funció i el seu tipus. Els usuaris es distribueixen per departaments, els equips físics per tipus de dispositiu i els comptes de serveis es mantenen separats.
 
 ---
 
 ## Criteri utilitzat per diferenciar OU i grups
+
+---
+Les OU s'utilitzen per organitzar els objectes del directori i facilitar-ne l'administració. Els grups s'utilitzen per agrupar usuaris segons el departament, la responsabilitat o el projecte, i gestionar els permisos d'accés als recursos.
+
+---
