@@ -68,7 +68,7 @@ Indica quina opció utilitzaries principalment en cada cas.
 |Identificar les persones que participen en Campanya Estiu|☐|**X**|
 |Organitzar els servidors|**X**|☐|
 |Donar privilegis als administradors del sistema|☐|**X**|
-|Organitzar els comptes utilitzats per aplicacions|☐|☐|
+|Organitzar els comptes utilitzats per aplicacions|**X**|☐|
 
 ### Explica amb les teves paraules la diferència principal entre una OU i un grup.
 
