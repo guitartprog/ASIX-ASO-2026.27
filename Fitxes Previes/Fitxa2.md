@@ -277,24 +277,34 @@ Escull **dues decisions** del teu DIT que consideris importants i justifica-les.
 ### Decisió 1
 
 ---
+Organitzar els usuaris en unitats organitzatives segons el departament al qual pertanyen.
+
+
+---
 
 **Justificació:**
 
 ---
+Aquesta organització facilita l'administració dels comptes d'usuari, permet localitzar-los ràpidament i ajuda a gestionar els treballadors de cada departament de manera ordenada.
 
 ---
 
 ### Decisió 2
 
 ---
+Agrupar tots els equips físics dins de l'OU `Equips`, separant-los segons el seu tipus.
+
+---
 
 **Justificació:**
 
 ---
 
----
+Permet tenir tots els dispositius de MusicCloud centralitzats i organitzats, com ara portàtils, servidors, impressores i dispositius de xarxa. Això facilita la seva identificació i administració.
 
 ---
+
+
 
 # 9. Comprovació final
 
