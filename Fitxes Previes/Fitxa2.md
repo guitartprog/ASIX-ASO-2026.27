@@ -136,18 +136,20 @@ Dídac continua pertanyent a Administració, però també pot formar part del gr
 
 # 5. Servei de directori
 
-Explica breument què entens per **servei de directori**.
+**Explica breument què entens per servei de directori**.
 
 ---
 És un servei que permet emmagatzemar, organitzar i gestionar de manera centralitzada la informació dels usuaris, grups, equips i altres objectes d'una empresa.
 
 ---
 
-Quin problema resol a MusicCloud?
+**Quin problema resol a MusicCloud?**
 
 ---
 
----
+Permet administrar els comptes i els accessos de tots els treballadors des d'un únic sistema.
+
+Això facilita la gestió de permisos, les altes i baixes d'usuaris i l'organització dels recursos de l'empresa.
 
 ---
 
