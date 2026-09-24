@@ -75,12 +75,18 @@ Indica quina opció utilitzaries principalment en cada cas.
 **OU:**
 
 ---
+Una unitat organitzativa serveix per organitzar els objectes del directori en una estructura jeràrquica.
+
+Permet separar usuaris, equips i altres objectes segons les necessitats d'administració.
 
 ---
 
 **Grup:**
 
 ---
+Un grup serveix per reunir usuaris que comparteixen necessitats d'accés o permisos.
+
+Permet assignar permisos als recursos de manera conjunta sense haver de configurar cada usuari individualment.
 
 ---
 
@@ -102,11 +108,20 @@ Indica:
 **En quina OU ubicaries el seu compte?**
 
 ---
+A la OU:
+
+    MusicCloud/Usuaris/Administracio
+
+---
 
 **A quins grups podria pertànyer?**
 
 ---
+Podria pertanyer a els grups:
 
+    GG_Administracio
+
+    GG_Projecte_CampanyaEstiu
 ---
 
 ### Per què no és contradictori que estigui en una OU però pertanyi a diversos grups?
