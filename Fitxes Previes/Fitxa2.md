@@ -313,6 +313,7 @@ Respon breument.
 ### a) Per què no seria una bona idea guardar tots els usuaris, grups, equips i servidors al mateix nivell sense organitzar-los?
 
 ---
+Perquè seria més difícil trobar i administrar els objectes, controlar-ne l'organització i aplicar configuracions de manera ordenada. A més, a mesura que l'empresa creixés, la gestió seria més complicada.
 
 ---
 
