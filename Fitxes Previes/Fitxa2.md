@@ -160,8 +160,14 @@ Completa les frases següents.
 **LDAP és:**
 
 ---
+Un protocol que permet accedir, consultar i modificar informació emmagatzemada en un servei de directori, segons els permisos corresponents.
+
+---
 
 **LDAP no és:**
+
+---
+No és un servei de directori concret ni és sinònim d'Active Directory. És un protocol que poden utilitzar diferents serveis de directori.
 
 ---
 
@@ -169,10 +175,10 @@ Indica si les afirmacions són certes o falses.
 
 |Afirmació|C|F|
 |---|:-:|:-:|
-|LDAP és sinònim d'Active Directory|☐|☐|
-|LDAP permet accedir i consultar informació d'un directori|☐|☐|
-|OpenLDAP és una implementació d'un servei de directori|☐|☐|
-|Active Directory utilitza LDAP, entre altres tecnologies|☐|☐|
+|LDAP és sinònim d'Active Directory|☐|**X**|
+|LDAP permet accedir i consultar informació d'un directori|**x**|☐|
+|OpenLDAP és una implementació d'un servei de directori|**X**|☐|
+|Active Directory utilitza LDAP, entre altres tecnologies|**X**|☐|
 
 ---
 
@@ -198,10 +204,68 @@ Ha de mostrar, com a mínim:
 ```text
 MusicCloud
 │
-│
-│
-│
-│
+└── dc=musiccloud,dc=local
+    │
+    ├── ou=Usuaris
+    │   ├── ou=Direccio
+    │   │   ├── Aina Ciurans
+    │   │   └── Rut Tornil
+    │   │
+    │   ├── ou=Administracio
+    │   │   ├── Dídac Gassó
+    │   │   └── Laia Macias
+    │   │
+    │   ├── ou=SuportTecnic
+    │   │   ├── Estel Birosta
+    │   │   ├── Aina Zuriguel
+    │   │   └── Lluïsa Richart
+    │   │
+    │   ├── ou=ProduccioMusical
+    │   │   ├── Roser Alberch
+    │   │   ├── Guillem Adella
+    │   │   ├── Meritxell Reglat
+    │   │   ├── Alícia Monclús
+    │   │   ├── Carles Molins
+    │   │   └── Eulàlia Galcera
+    │   │
+    │   ├── ou=Informatica
+    │   │   ├── Talia Costas
+    │   │   └── Alex Soriano
+    │   │
+    │   └── ou=Externs
+    │       ├── Pere Espinalt
+    │       └── Neus Bages
+    │
+    ├── ou=Grups
+    │   ├── GG_Direccio
+    │   ├── GG_Administracio
+    │   ├── GG_Administracio_Responsable
+    │   ├── GG_SuportTecnic
+    │   ├── GG_SuportTecnic_Responsable
+    │   ├── GG_ProduccioMusical
+    │   ├── GG_ProduccioMusical_Responsable
+    │   ├── GG_Informatica
+    │   ├── GG_Externs
+    │   └── GG_Projecte_CampanyaEstiu
+    │
+    ├── ou=Equips
+    │   ├── ou=Portatils
+    │   ├── ou=Sobretaula
+    │   ├── ou=Mobils
+    │   ├── ou=Servidors
+    │   ├── ou=DispositiusXarxa
+    │   │   ├── Routers
+    │   │   ├── Switches
+    │   │   └── Firewalls
+    │   ├── ou=Emmagatzematge
+    │   │   └── NAS
+    │   ├── ou=Alimentacio
+    │   │   └── SAI
+    │   └── ou=Impressores
+    │
+    └── ou=Serveis
+        ├── ComptesAplicacions
+        └── ComptesServeis
 ```
 
 ---
