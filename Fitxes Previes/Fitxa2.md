@@ -13,11 +13,12 @@ Indica quins tipus d'objectes consideres que ha de contenir el servei de directo
 
 |Tipus d'objecte|Exemples a MusicCloud|
 |---|---|
-|Usuaris||
-|Grups||
-|Equips||
-|Servidors||
-|Comptes d'aplicacions o serveis||
+| Usuaris | Aina Ciurans, Rut Tornil, Dídac Gassó, Laia Macias i la resta de treballadors i usuaris externs. |
+| Grups | Administració, Direcció, Suport tècnic, Producció musical, Informàtica i grups de responsables. |
+| Equips | Ordinadors dels treballadors de MusicCloud. |
+| Servidors | Servidor de directori, servidor de fitxers i servidors que allotgin serveis de l'empresa. |
+| Comptes d'aplicacions o serveis | Comptes utilitzats per serveis de còpies de seguretat, aplicacions o altres processos automatitzats. |
+
 
 Hi afegiries algun altre tipus d'objecte?
 
@@ -29,13 +30,14 @@ Hi afegiries algun altre tipus d'objecte?
 
 Proposa les **unitats organitzatives (OU)** principals que utilitzaries a MusicCloud.
 
-|OU|Què contindrà?|Per què la crees?|
+| OU | Què contindrà? | Per què la crees? |
 |---|---|---|
-||||
-||||
-||||
-||||
-||||
+| Usuaris | Comptes dels treballadors i usuaris externs. | Organitzar els comptes de les persones de l'empresa. |
+| Grups | Grups de departaments, responsables i projectes. | Centralitzar i organitzar els grups d'usuaris. |
+| Equips | Comptes dels ordinadors clients. | Facilitar l'administració i la configuració dels equips. |
+| Servidors | Comptes dels servidors de MusicCloud. | Separar els servidors dels ordinadors clients i facilitar-ne l'administració. |
+| Serveis | Comptes d'aplicacions i serveis. | Separar els comptes tècnics dels comptes personals. |
+
 
 ## 2.1. Organització dels usuaris
 
@@ -44,9 +46,14 @@ Dibuixa l'estructura que utilitzaries per organitzar els usuaris de MusicCloud.
 ```text
 MusicCloud
 │
-└──
+└── Usuaris
+    ├── Direccio
+    ├── Administracio
+    ├── SuportTecnic
+    ├── ProduccioMusical
+    ├── Informatica
+    └── Externs
 ```
-
 ---
 
 # 3. OU o grup?
