@@ -86,9 +86,30 @@ i torna a consultar:
 ```powershell
 $valor.GetType()
 ```
+![Descripción de la imagen](/Powershell/img/3.3.png)
 Respon:
 
 **Ha canviat el valor? Ha canviat el tipus?**
+
+Ha canviat el valor?
+
+El valor que veiem continua sent 100, però internament ara està representat com a text.
+
+Ha canviat el tipus?
+
+Sí.
+
+Inicialment:
+
+    100 → Int32
+
+Després:
+
+    "100" → String
+
+Això mostra que PowerShell permet tornar a assignar a una variable un valor d'un altre tipus.
+
+
 ## 4. Tipus explícits
 
 Executa:
