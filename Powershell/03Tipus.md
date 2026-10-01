@@ -129,8 +129,42 @@ Consulta també:
 $portText.GetType()
 ```
 Respon:
+![Descripción de la imagen](/Powershell/img/3.4.png)
 
 **Tot i que visualment els dos valors semblen `443`, són del mateix tipus?**
+
+No, no són del mateix tipus.
+
+Encara que visualment tots dos mostrin:
+
+    443
+
+$port és un número:
+
+    Int32
+
+mentre que $portText és text:
+
+    String
+
+Això pot afectar les operacions que fem amb aquests valors.
+
+Per exemple:
+
+    $port + 1
+
+dona:
+
+    444
+
+Mentre que amb:
+
+    $portText + 1
+
+PowerShell pot convertir el 1 a text i concatenar-lo, donant:
+
+    4431
+
 ## 5. Booleans
 
 Crea:
@@ -145,6 +179,8 @@ Després mostra un missatge amb:
 Write-Host "Servei actiu: $serveiActiu"
 Write-Host "Servidor disponible: $servidorDisponible"
 ```
+![Descripción de la imagen](/Powershell/img/3.5.png)
+
 ## 6. General
 
 Crea variables per representar un servidor amb aquesta informació:
@@ -154,6 +190,8 @@ Port: 443
 Espai lliure: 125.7 GB
 Actiu: True
 ```
+
+
 Després:
 
 1. mostra el valor de totes les variables;
