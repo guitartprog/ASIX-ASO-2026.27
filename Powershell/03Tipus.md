@@ -195,5 +195,9 @@ Actiu: True
 Després:
 
 1. mostra el valor de totes les variables;
+![Descripción de la imagen](/Powershell/img/3.6.1.png)
 2. consulta el tipus de cadascuna;
+![Descripción de la imagen](/Powershell/img/3.6.2.png)
+
 3. indica quin tipus de dada has utilitzat per cada valor.
+He utilitzat el tipus de dada **String** per al nom del servidor `SRV-WEB01`, **Int32** per al port `443`, **Double** per a l'espai lliure `125.7` i **Boolean** per indicar si el servidor està actiu amb el valor `True`.
