@@ -22,6 +22,8 @@ Completa una taula com aquesta:
 | $port    | `443`        |       |
 | $actiu   | $true        |       |
 | $espai   | `12.5`       |       |
+
+![Descripción de la imagen](/Powershell/img/3.1.png)
 ## 2. Número o text?
 
 Executa:
@@ -38,6 +40,7 @@ $b = "5"
 
 $a + $b
 ```
+![Descripción de la imagen](/Powershell/img/3.2.png)
 Respon:
 
 - Quin resultat obtens en cada cas?
