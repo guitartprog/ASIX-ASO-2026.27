@@ -49,6 +49,25 @@ Mostra després el contingut de cadascuna de les variables.
 
 
 - Quin tipus tenen $a i $b en cada cas?
+
+En el primer cas:
+
+    10 + 5
+
+PowerShell està fent una suma numèrica:
+
+    15
+
+En el segon cas:
+
+    "10" + "5"
+
+els dos valors són textos (String). L'operador + els concatena, és a dir, els posa un darrere de l'altre:
+
+    10 + 5 → 105
+Conclusió: les cometes són importants perquè fan que 10 sigui interpretat com a text en lloc de com a número.
+
+
 ## 3. Canviar el tipus d'una variable
 
 Executa:
