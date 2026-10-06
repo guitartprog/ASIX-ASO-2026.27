@@ -23,7 +23,7 @@ Completa una taula com aquesta:
 | $actiu   | $true        |       |
 | $espai   | `12.5`       |       |
 
-![Descripción de la imagen](/Powershell/img/3.1.png)
+![Descripción de la imagen](./img/3.1.png)
 ## 2. Número o text?
 
 Executa:
@@ -40,7 +40,7 @@ $b = "5"
 
 $a + $b
 ```
-![Descripción de la imagen](/Powershell/img/3.2.png)
+![Descripción de la imagen](./img/3.2.png)
 Respon:
 
 - Quin resultat obtens en cada cas?
@@ -86,7 +86,7 @@ i torna a consultar:
 ```powershell
 $valor.GetType()
 ```
-![Descripción de la imagen](/Powershell/img/3.3.png)
+![Descripción de la imagen](./img/3.3.png)
 Respon:
 
 **Ha canviat el valor? Ha canviat el tipus?**
@@ -129,7 +129,7 @@ Consulta també:
 $portText.GetType()
 ```
 Respon:
-![Descripción de la imagen](/Powershell/img/3.4.png)
+![Descripción de la imagen](./img/3.4.png)
 
 **Tot i que visualment els dos valors semblen `443`, són del mateix tipus?**
 
@@ -179,7 +179,7 @@ Després mostra un missatge amb:
 Write-Host "Servei actiu: $serveiActiu"
 Write-Host "Servidor disponible: $servidorDisponible"
 ```
-![Descripción de la imagen](/Powershell/img/3.5.png)
+![Descripción de la imagen](./img/3.5.png)
 
 ## 6. General
 
@@ -195,9 +195,9 @@ Actiu: True
 Després:
 
 1. mostra el valor de totes les variables;
-![Descripción de la imagen](/Powershell/img/3.6.1.png)
+![Descripción de la imagen](./img/3.6.1.png)
 2. consulta el tipus de cadascuna;
-![Descripción de la imagen](/Powershell/img/3.6.2.png)
+![Descripción de la imagen](./img/3.6.2.png)
 
 3. indica quin tipus de dada has utilitzat per cada valor.
 He utilitzat el tipus de dada **String** per al nom del servidor `SRV-WEB01`, **Int32** per al port `443`, **Double** per a l'espai lliure `125.7` i **Boolean** per indicar si el servidor està actiu amb el valor `True`.
