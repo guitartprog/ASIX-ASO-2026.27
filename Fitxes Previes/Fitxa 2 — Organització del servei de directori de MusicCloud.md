@@ -23,7 +23,19 @@ Indica quins tipus d'objectes consideres que ha de contenir el servei de directo
 Hi afegiries algun altre tipus d'objecte?
 
 ---
+A MusicCloud hem de gestionar diferents tipus d'objectes per poder administrar els recursos de l'empresa de manera centralitzada.
 
+Els principals objectes són:
+
+- **Usuaris:** comptes dels treballadors i dels col·laboradors externs que necessiten accedir als recursos de l'empresa.
+- **Grups:** agrupacions d'usuaris que comparteixen necessitats d'accés, com ara els treballadors d'Administració.
+- **Equips:** ordinadors de sobretaula, portàtils i altres dispositius que es connecten a la xarxa.
+- **Servidors:** sistemes que proporcionen serveis i recursos als usuaris de MusicCloud.
+- **Comptes de servei:** comptes utilitzats per aplicacions o processos que necessiten autenticar-se per executar tasques automàtiques.
+- **Dispositius de xarxa:** routers, switches i tallafocs que permeten connectar i protegir la infraestructura.
+- **Recursos compartits:** carpetes, documents i còpies de seguretat als quals s'assignen permisos d'accés.
+
+Aquests objectes s'han de gestionar de manera coherent perquè cada usuari pugui accedir als recursos que necessita, sense obtenir permisos innecessaris.
 ---
 
 # 2. Organització mitjançant unitats organitzatives
@@ -32,11 +44,11 @@ Proposa les **unitats organitzatives (OU)** principals que utilitzaries a MusicC
 
 | OU | Què contindrà? | Per què la crees? |
 |---|---|---|
-| Usuaris | Comptes dels treballadors i usuaris externs. | Organitzar els comptes de les persones de l'empresa. |
+| Usuaris | Comptes dels treballadors i usuaris externs. | Permet administrar els comptes personals i aplicar polítiques d'usuari comunes. |
 | Grups | Grups de departaments, responsables i projectes. | Centralitzar i organitzar els grups d'usuaris. |
-| Equips | Comptes dels ordinadors clients. | Facilitar l'administració i la configuració dels equips. |
-| Servidors | Comptes dels servidors de MusicCloud. | Separar els servidors dels ordinadors clients i facilitar-ne l'administració. |
-| Serveis | Comptes d'aplicacions i serveis. | Separar els comptes tècnics dels comptes personals. |
+| Equips | Comptes dels ordinadors clients. | Permet aplicar configuracions i polítiques diferents de les dels usuaris.. |
+| Servidors | Comptes dels servidors de MusicCloud. | Permet separar els servidors dels equips clients i aplicar polítiques de seguretat més restrictives. |
+| Comptes Serveis | Comptes tècnics utilitzats per aplicacions o processos. | Permet separar els comptes tècnics dels comptes personals i gestionar-los amb controls específics. |
 
 
 ## 2.1. Organització dels usuaris
@@ -239,14 +251,10 @@ MusicCloud
     ├── ou=Grups
     │   ├── GG_Direccio
     │   ├── GG_Administracio
-    │   ├── GG_Administracio_Responsable
     │   ├── GG_SuportTecnic
-    │   ├── GG_SuportTecnic_Responsable
     │   ├── GG_ProduccioMusical
-    │   ├── GG_ProduccioMusical_Responsable
     │   ├── GG_Informatica
-    │   ├── GG_Externs
-    │   └── GG_Projecte_CampanyaEstiu
+    │   └── GG_Externs
     │
     ├── ou=Equips
     │   ├── ou=Portatils
@@ -277,22 +285,23 @@ Escull **dues decisions** del teu DIT que consideris importants i justifica-les.
 ### Decisió 1
 
 ---
-Organitzar els usuaris en unitats organitzatives segons el departament al qual pertanyen.
-
+ Separar els usuaris dels equips
 
 ---
 
 **Justificació:**
 
 ---
-Aquesta organització facilita l'administració dels comptes d'usuari, permet localitzar-los ràpidament i ajuda a gestionar els treballadors de cada departament de manera ordenada.
+He decidit separar els comptes d'usuari dels comptes dels equips perquè les necessitats de seguretat i administració són diferents. Els usuaris necessiten polítiques relacionades amb l'autenticació i l'accés als recursos, mentre que els equips poden necessitar configuracions de seguretat, restriccions de programari i altres polítiques pròpies dels dispositius.
+
+Aquesta separació permet aplicar polítiques diferents segons el tipus d'objecte sense haver de barrejar els comptes personals amb els ordinadors de l'empresa.
 
 ---
 
 ### Decisió 2
 
 ---
-Agrupar tots els equips físics dins de l'OU `Equips`, separant-los segons el seu tipus.
+Crear una OU específica per als servidors
 
 ---
 
@@ -300,7 +309,9 @@ Agrupar tots els equips físics dins de l'OU `Equips`, separant-los segons el se
 
 ---
 
-Permet tenir tots els dispositius de MusicCloud centralitzats i organitzats, com ara portàtils, servidors, impressores i dispositius de xarxa. Això facilita la seva identificació i administració.
+He decidit separar els servidors dels ordinadors clients perquè els servidors proporcionen serveis essencials per al funcionament de MusicCloud i poden contenir informació sensible. Per aquest motiu, necessiten mesures de seguretat i configuracions diferents de les dels equips que utilitzen habitualment els treballadors.
+
+Una OU específica permet aplicar polítiques pròpies als servidors i facilita controlar els canvis de configuració que poden afectar la disponibilitat i la seguretat dels serveis de l'empresa.
 
 ---
 
@@ -340,13 +351,23 @@ A partir de les decisions preses durant la sessió, deixa definida la proposta q
 
 ```text
 MusicCloud
+│
 └── dc=musiccloud,dc=local
+    │
     ├── ou=Usuaris
-    │   ├── Direccio
-    │   ├── Administracio
-    │   ├── SuportTecnic
-    │   ├── ProduccioMusical
-    │   └── Informatica
+    │   ├── ou=Direccio
+    │   │
+    │   ├── ou=Administracio
+    │   │
+    │   ├── ou=SuportTecnic
+    │   │
+    │   ├── ou=ProduccioMusical
+    │   │
+    │   ├── ou=Informatica
+    │   │
+    │   └── ou=Externs
+    │
+    ├── ou=Grups
     │
     ├── ou=Equips
     │   ├── ou=Portatils

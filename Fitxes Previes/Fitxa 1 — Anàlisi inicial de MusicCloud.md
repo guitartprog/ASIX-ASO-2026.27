@@ -110,11 +110,11 @@ No busquis encara una solució tècnica. Pensa només en les necessitats de l'em
 
 | Situació | Accés proposat | Justificació |
 | - | - | - |
-| Dídac accedeix a la carpeta compartida d'Administració | **L/E** | És membre d'Administració i necessita treballar amb els documents compartits del departament.                                                                          |
-| Laia accedeix a la gestió del departament d'Administració | **L/E** | És la responsable del departament i la documentació estableix R: L/E.|| Pere, treballador extern, accedeix als comunicats interns | **NA** | Els externs no tenen accés als comunicats interns segons la matriu d'accessos. |
-| Talia accedeix als backups del sistema | **ADM** | La matriu indica ADM per a Informàtica. Tot i això, tècnicament aquest privilegi s'hauria d'assignar només al personal que tingui realment funcions d'administració. |
-| Un membre de Producció musical accedeix a la carpeta d'Administració | **NA**  | No necessita accedir als recursos interns d'un altre departament. |
-| Un participant de campanya_estiu accedeix als fitxers del projecte | **SP** | L'accés està determinat per la participació en el projecte, no pel departament d'origen.  |
+| Dídac accedeix a la carpeta compartida d'Administració | **L/E** | Dídac pertany a Administració i necessita consultar i modificar els documents compartits per dur a terme les tasques administratives. No necessita permisos per canviar els permisos de la carpeta ni per administrar el sistema.                                                                          |
+| Laia accedeix a la gestió del departament d'Administració | **L/E** | Laia és la responsable del departament i necessita consultar i actualitzar la documentació de gestió per coordinar les tasques administratives. Aquest accés està limitat als recursos del seu departament i no implica privilegis globals d'administració. | **NA** | Els externs no tenen accés als comunicats interns segons la matriu d'accessos. |
+| Pere, treballador extern, accedeix als comunicats interns. | **NA** | Pere és un col·laborador extern i no forma part del personal autoritzat per consultar els comunicats interns. Restringir-ne l'accés evita divulgar informació corporativa a persones que no la necessiten per fer la seva feina. |
+| Talia accedeix als backups del sistema. | **ADM**  | Si Talia forma part del personal d'Informàtica autoritzat a administrar les còpies de seguretat, necessita els permisos necessaris per gestionar-les. Com que els backups contenen informació sensible i són essencials per recuperar el sistema, aquest accés s'ha de limitar al personal que realment tingui aquesta responsabilitat. |
+
 
 ---
 
@@ -182,11 +182,13 @@ A més, si s'oblidés algun permís anterior, l'usuari podria conservar accés a
 No cal que coneguis encara el nom tècnic de la solució.
 
 ---
-Una manera més eficient seria crear un grup amb les persones que necessiten els mateixos permisos.
-Els permisos s'assignarien al grup en lloc de fer-ho persona per persona.
-També podríem organitzar els usuaris dins d'una unitat organitzativa segons el seu departament.
-Així, seria més fàcil gestionar les altes, baixes i canvis de departament.
-D'aquesta manera reduïm errors i facilitem l'administració del sistema.
+Una manera més eficient de gestionar aquestes persones és crear un grup amb els usuaris que necessiten accedir als mateixos recursos.
+
+Per exemple, podríem crear un grup anomenat `GG_Administracio` i afegir-hi els treballadors del departament d'Administració. Després, assignaríem al grup els permisos de lectura i escriptura sobre la carpeta compartida d'Administració, en lloc de configurar els permisos individualment per a cada usuari.
+
+D'aquesta manera, quan una persona s'incorpori al departament o en surti, només caldrà actualitzar la pertinença al grup. Això simplifica l'administració, redueix els errors i facilita que cada usuari tingui únicament els permisos necessaris per fer la seva feina.
+
+Els responsables que necessitin permisos addicionals es podrien incloure en un grup específic, sempre que aquests permisos estiguin justificats per les seves funcions.
 
 ---
 
