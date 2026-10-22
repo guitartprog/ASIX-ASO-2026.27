@@ -8,8 +8,6 @@ Abans d’instal·lar Active Directory Domain Services, cal comprovar que l’al
 
 # Identificació dels components
 
-A partir de l’arquitectura prevista, indiqueu:
-
 1.   Quin serà el nom del bosc.  
 >musiccloud
     
@@ -26,9 +24,10 @@ A partir de l’arquitectura prevista, indiqueu:
 >S'utilitzara Kerberos, el cual es el protocol principal de la authetnicació de Windwos Server
     
 6.   Quin protocol permetrà consultar els objectes.  
->El protocol que permeterà
+>El protocol que permeterà consultar els objectes serà LDAP, el cual permet consultar i accedir a objectes del directori actiu.
       
-7.   7. Quin servei de Windows emmagatzema i administra els objectes del domini?
+7. Quin servei de Windows emmagatzema i administra els objectes del domini?
+>El servei de Windwos que emmagatzema i administra els objectes del domini és Active Directory Domain Services (AD-DS), el cual emmegatzema i administra els objectes del domini, com a els usuaris, equips, grups i UO's.
     
 
 # Anàlisi de l’arquitectura
@@ -36,15 +35,19 @@ A partir de l’arquitectura prevista, indiqueu:
 Responeu breument:
 
 1.   Per què el servidor `SRV-AD-01` necessita una adreça IP fixa?
+>Perque els clients puguin trobar el controlador de domini i el DNS semrpe a la mateixa IP garantin el funcionament correcte dels serveis de active directory.
     
 2.   Per què els clients del domini han d’utilitzar un servidor DNS capaç de resoldre la zona d’Active Directory?
+>Perque puguin localitzar el controlador de domini i els serveis necesaris per a authenticarse i accedir a els recursos del domini
     
 3.   Què passaria si `SRV-AD-01` estigués apagat?
+>Els clinets no podrien contactar amb el servidor de domini per a authenticar-se ni consultar active directory. També podrien deixar de funcionar alters serveis que depenguin de aquest servidor com la resolució DNS del domini..
     
 4.   Per què un únic controlador de domini és acceptable al laboratori però insuficient en una empresa real?
+>A el laboratori és suficient per aprendre, comporvar i validar la configuració. En una empresa real un únic controlador de domini és un punt únic de fallada si deixa de funcionar els serveis de domini poden quedar afectats. Per a aixó és recomenable disposar de més de un controlador de domini
     
 5.   Per què els departaments no s’han creat com a dominis diferents?
-    
+>Perquè tots els departaments pertanyen a la mateixa empresa i poden compartir un únic domini. Les unitats organitzatives (OU) i els grups permeten organitzar els usuaris i gestionar els permisos sense necessitat de crear dominis independents.
 
 # Planificació de la implantació
 
