@@ -46,6 +46,7 @@ Responeu breument:
 >Els clinets no podrien contactar amb el servidor de domini per a authenticar-se ni consultar active directory. També podrien deixar de funcionar alters serveis que depenguin de aquest servidor com la resolució DNS del domini..
     
 4.   Per què un únic controlador de domini és acceptable al laboratori però insuficient en una empresa real?
+>A el laboratori és suficient per aprendre, comporvar i validar la configuració. En una empresa real un únic controlador de domini és un punt únic de fallada si deixa de funcionar els serveis de domini poden quedar afectats. Per a aixó és recomenable disposar de més de un controlador de domini
     
 5.   Per què els departaments no s’han creat com a dominis diferents?
     
