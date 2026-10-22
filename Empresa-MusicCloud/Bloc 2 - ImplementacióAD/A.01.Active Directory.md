@@ -76,3 +76,26 @@ Ordeneu les accions següents:
 
 Justifiqueu breument l’ordre escollit.  
 
+>1.Preparar la xarxa del servidor 
+
+>2.Instalar AD DS
+
+>3.Crear el bosc i el domini.
+
+>4.Comprovar el DNS
+
+>5.Comprovar el funcionament del domini.
+
+>6.Crear les unitats organitzatives.
+
+>7.Crear els grups.
+
+>8.Crear els usuaris.
+
+>9.Assignar els usuaris als grups.
+
+>10.Unir el client al domini.
+
+Breu Justificació:
+
+>Primer, cal preparar la xarxa del servidor i assignar-li una adreça IP fixa. Després, s'instal·la AD DS i es promociona el servidor per crear el bosc i el domini. A continuació, es comprova que el DNS funcioni correctament i que el domini estigui operatiu. Quan la infraestructura està preparada, es creen les unitats organitzatives, els grups i els usuaris, i s'assignen els usuaris als grups corresponents.Finalment, s'uneix el client al domini per comprovar que pot localitzar el controlador de domini i utilitzar els serveis d'Active Directory.
