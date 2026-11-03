@@ -34,13 +34,13 @@ Abans d’instal·lar Active Directory Domain Services, cal comprovar que l’al
 
 Responeu breument:
 
-1.   Per què el servidor `SRV-AD-01` necessita una adreça IP fixa?
+1.   Per què el servidor `MC-DC01` necessita una adreça IP fixa?
 >Perque els clients puguin trobar el controlador de domini i el DNS semrpe a la mateixa IP garantin el funcionament correcte dels serveis de active directory.
     
 2.   Per què els clients del domini han d’utilitzar un servidor DNS capaç de resoldre la zona d’Active Directory?
 >Perque puguin localitzar el controlador de domini i els serveis necesaris per a authenticarse i accedir a els recursos del domini
     
-3.   Què passaria si `SRV-AD-01` estigués apagat?
+3.   Què passaria si `MC-DC01` estigués apagat?
 >Els clinets no podrien contactar amb el servidor de domini per a authenticar-se ni consultar active directory. També podrien deixar de funcionar alters serveis que depenguin de aquest servidor com la resolució DNS del domini..
     
 4.   Per què un únic controlador de domini és acceptable al laboratori però insuficient en una empresa real?
