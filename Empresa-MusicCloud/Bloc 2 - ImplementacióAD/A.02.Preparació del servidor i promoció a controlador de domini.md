@@ -97,7 +97,7 @@ Després del reinici, comproveu:
     
     
 Completeu la taula següent. Adjunta la comanda que has utilitzat per a cada una de les comprovacions.
-
+d
 | Comprovació                          | Resultat |
 | ------------------------------------ | -------- |
 | Nom del servidor *fet amb hostname*                    |          |
