@@ -100,10 +100,10 @@ Completeu la taula següent. Adjunta la comanda que has utilitzat per a cada una
 d
 | Comprovació                          | Resultat |
 | ------------------------------------ | -------- |
-| Nom del servidor *fet amb hostname*                    |          |
-| IP fixa configurada *Fet amb Get-NetIPConfiguration*                 |          |
-| AD DS instal·lat                     |          |
-| Domini creat                         |          |
+| Nom del servidor *fet amb hostname*                    |   MC-DC01       |
+| IP fixa configurada *Fet amb Get-NetIPConfiguration*                 |   192.168.56.56       |
+| AD DS instal·lat  *Get-WindowsFeature AD-Domain-Services*                   |   Servicios de Dominio de Active Directory        |
+| Domini creat         *Get-ADDomain*                |          |
 | DNS instal·lat                       |          |
 | Resolució de `musiccloud.local` *Fet amb: Resolve-DnsName musiccloud.local*      |          |
 | Eines d’Active Directory disponibles *Fet amb Get-Command Get-ADDomain* |          |
@@ -113,15 +113,21 @@ d
 Responeu breument:
 
 1. Per què `MC-DC01` necessita una IP fixa?
+>Perquè els ordinadors de MusicCloud puguin trobar sempre el servidor i connectar-se al domini sense problemes.
     
 2. Per què és necessari DNS en un domini Active Directory?
+>Perquè els equips puguin localitzar el controlador de domini i els serveis necessaris per iniciar sessió.
     
 3. Quina diferència hi ha entre instal·lar AD DS i promocionar el servidor a controlador de domini?
+>Instal·lar AD DS és afegir el servei al Windows Server. Promocionar-lo és convertir el servidor en controlador de domini i crear el domini.
     
 4. Quin és el nom del domini creat?
+>El nom del domini creat és musiccloud.local.
     
 5. Quin és el nom NetBIOS del domini?
+>El nom NetBIOS del domini és MUSICCLOUD.
     
 6. Per què no és recomanable que els clients del domini utilitzin un DNS extern com a DNS principal?
+>Perquè un DNS extern no coneix els registres interns d'Active Directory. Això podria impedir que els ordinadors trobessin el controlador de domini.
     
 
