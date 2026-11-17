@@ -103,10 +103,10 @@ d
 | Nom del servidor *fet amb hostname*                    |   MC-DC01       |
 | IP fixa configurada *Fet amb Get-NetIPConfiguration*                 |   192.168.56.56       |
 | AD DS instal·lat  *Get-WindowsFeature AD-Domain-Services*                   |   Servicios de Dominio de Active Directory        |
-| Domini creat         *Get-ADDomain*                |          |
-| DNS instal·lat                       |          |
-| Resolució de `musiccloud.local` *Fet amb: Resolve-DnsName musiccloud.local*      |          |
-| Eines d’Active Directory disponibles *Fet amb Get-Command Get-ADDomain* |          |
+| Domini creat         *Get-ADDomain*                |  Molta info pero entre ella surt Musiccolud     |
+| DNS instal·lat   *Ho He fet amb: Get-WindowsFeature DNS*                    |   Servidor DNS       |
+| Resolució de `musiccloud.local` *Fet amb: Resolve-DnsName musiccloud.local*      |   Musiccloud.local TYPE A ...       |
+| Eines d’Active Directory disponibles *Fet amb Get-Command Get-ADDomain* |   CMlet Get-Command Get-ADDomain version 1.0.1.0       |
 
 ## Preguntes
 
