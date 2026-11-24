@@ -1,0 +1,5 @@
+GRUP,RUTA,MEMBRE
+GG_Administracio,OU=UO_Grups,OU=UO_MusicCloud,DC=musiccloud,DC=local,
+GG_SuportTecnic,OU=UO_Grups,OU=UO_MusicCloud,DC=musiccloud,DC=local,
+GG_Projecte,OU=UO_Grups,OU=UO_MusicCloud,DC=musiccloud,DC=local,
+GG_Administracio,OU=UO_Grups,OU=UO_MusicCloud,DC=musiccloud,DC=local,
